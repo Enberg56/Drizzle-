@@ -40,5 +40,5 @@
   // Get our forecast data back
   $forecast = json_decode(file_get_contents($forecast), true);
 
-  $icon = cloudy;//$forecast['currently']['icon'];
-  $changetheme=$icon;
+  $icon =//$forecast['currently']['icon'];
+  $changetheme='bg-sunny';

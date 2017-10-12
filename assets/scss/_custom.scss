@@ -4,16 +4,19 @@ $rainpri:#577483;
 $rainsec:#82A5C0;
 $cloudpri:#616d75;
 $cloudsec:#95a3ad;
-$bordercard:0.2rem solid;
+$pri : $cloudpri; //php here
+$sec : $cloudsec; //php here to
+
+$bordercard:0.4rem;
 .text { font-size: 1rem ;}
-.clear-day{
+.bg-sunny{
 	background-color: #FFFFAD;
-	background: url("../images/<?php echo $changetheme;?>.jpg") top left;
+	background: url("../images/sunny.jpg") top left;
 	background-size: cover;
 	.card {
 		color: $sunpri;
 		border-color: $sunsec;
-		border: 4px;
+		border: 4px solid;
 		border-radius: $bordercard;
 		h2 { color: $sunpri;}
 	}
@@ -24,44 +27,4 @@ $bordercard:0.2rem solid;
 		color: $sunpri;
 		border-color: $sunsec;
 	}
-}
-.rain{
-	background-color: #adf3ff;
-	background: url("../images/rain.jpg") top left;
-	background-size: cover;
-	.card {
-		color: $rainpri;
-		border-color: $rainsec;
-		border: $bordercard;
-		border-radius: 0.8rem;
-		h2 { color: $rainpri;}
-	}
-	h1{
-		color: $rainpri;
-	}
-	.btn {
-		color: $rainpri;
-		border-color: $rainpri;
-		border: $bordercard;
-	}
-}
-.cloudy{
-	background-color: rgb(218, 224, 228);
-	background: url("../images/cloudy.jpg") top left;
-	background-size: cover;
-	.card {
-		color: $pri;
-		border-color: $sec;
-		border: 4px;
-		border-radius: $bordercard;
-		h2 { color: $pri;}
-	}
-	h1{
-		color: #FDF6E8;
-	}
-	.btn {
-		color: $pri;
-		border-color: $sec;
-	}
-
 }

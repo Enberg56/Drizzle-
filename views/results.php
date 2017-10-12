@@ -28,18 +28,9 @@
     <?php include 'partials/form.php'; ?>
   </div>
   <!-- ------------------------------------------------------ -->
-  <div class="row">
-        <?php $count=0;
-          while ($count<3){
-            echo "
-            ";
-            $count ++;
-          }
-          ?>
-  </div>
-  <div class="row">
+  <div class="carousel" data-flickity='{ "groupCells": true }'>
     <?php foreach($forecast['daily']['data'] as $day): ?>
-      <div class="col-12 col-md-3">
+      <div class="carousel-cell">
         <div class="card text-center p-4 my-5 mx-auto">
           <p class="lead m-0">
             <?php echo gmdate("l", $day['time']); ?>
